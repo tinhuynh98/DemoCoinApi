@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Heebo-Medium.ttf">
+            <string>Heebo-Medium</string>
+        </array>
+        <array key="Heebo-Regular.ttf">
+            <string>Heebo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardViewController" customModule="CoinMarket" customModuleProvider="target">
+            <connections>
+                <outlet property="blurImageView" destination="4Yz-xj-rtr" id="KMq-Pr-JrM"/>
+                <outlet property="dashboardLabel" destination="S1Q-KN-IXd" id="xtX-V7-aUf"/>
+                <outlet property="dayVolumeLabel" destination="30a-bM-X2Q" id="KLi-bq-1Vr"/>
+                <outlet property="dominanceLabel" destination="wX1-7Y-S6h" id="hSQ-y1-U0e"/>
+                <outlet property="marketCapLabel" destination="jeI-pU-zi3" id="Mmv-u5-0mF"/>
+                <outlet property="ratePercentLabel" destination="6U0-SS-QgW" id="jtj-bP-nZ9"/>
+                <outlet property="tableView" destination="F4M-F8-FvC" id="g9c-ym-PHe"/>
+                <outlet property="titleDayVolumeLabel" destination="pMX-u7-5DY" id="kEn-te-Yr3"/>
+                <outlet property="titleDominanceLabel" destination="3Mo-A0-Ced" id="KnU-1t-42R"/>
+                <outlet property="titleMarketCapLabel" destination="0hr-Pp-NvU" id="Zg3-Mq-HQm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="44.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wX1-7Y-S6h">
+                    <rect key="frame" x="235" y="241" width="39.5" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xII-Oj-Tkk">
+                    <rect key="frame" x="276" y="239" width="10" height="19"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1Q-KN-IXd">
+                    <rect key="frame" x="20" y="44" width="165.5" height="50"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="34"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MARKET CAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hr-Pp-NvU">
+                    <rect key="frame" x="20" y="136" width="74.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="260.315.295.751" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeI-pU-zi3">
+                    <rect key="frame" x="20" y="158" width="184.5" height="35"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="24"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F4M-F8-FvC">
+                    <rect key="frame" x="0.0" y="300.5" width="375" height="366.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24H VOLUME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMX-u7-5DY">
+                    <rect key="frame" x="20" y="218" width="73" height="18"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC DOMINANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mo-A0-Ced">
+                    <rect key="frame" x="235" y="218" width="95.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.218.940.630.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30a-bM-X2Q">
+                    <rect key="frame" x="20" y="241" width="178.5" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Heebo-Regular" family="Heebo" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vAF-YM-4Wj">
+                    <rect key="frame" x="200.5" y="239" width="7.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.2%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6U0-SS-QgW">
+                    <rect key="frame" x="322" y="169.5" width="26" height="18"/>
+                    <fontDescription key="fontDescription" name="Heebo-Medium" family="Heebo" pointSize="12"/>
+                    <color key="textColor" red="0.019607843137254902" green="0.86274509803921573" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-up" translatesAutoresizingMaskIntoConstraints="NO" id="lR2-Wi-dP6">
+                    <rect key="frame" x="310" y="173.5" width="10" height="10"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-blur" translatesAutoresizingMaskIntoConstraints="NO" id="4Yz-xj-rtr">
+                    <rect key="frame" x="0.0" y="283.5" width="375" height="76"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4Yz-xj-rtr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="25o-5i-Yy0"/>
+                <constraint firstItem="30a-bM-X2Q" firstAttribute="top" secondItem="pMX-u7-5DY" secondAttribute="bottom" constant="5" id="586-vt-wnC"/>
+                <constraint firstItem="lR2-Wi-dP6" firstAttribute="centerY" secondItem="jeI-pU-zi3" secondAttribute="centerY" constant="3.5" id="BHR-no-ky0"/>
+                <constraint firstItem="0hr-Pp-NvU" firstAttribute="top" secondItem="S1Q-KN-IXd" secondAttribute="bottom" constant="42" id="Dxt-N7-z0E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6U0-SS-QgW" secondAttribute="trailing" constant="27" id="EYx-ky-wEr"/>
+                <constraint firstItem="xII-Oj-Tkk" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="FEk-Cc-MWC"/>
+                <constraint firstItem="F4M-F8-FvC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FGz-8O-w2v"/>
+                <constraint firstItem="F4M-F8-FvC" firstAttribute="top" secondItem="30a-bM-X2Q" secondAttribute="bottom" constant="30" id="Fen-rJ-Dbi"/>
+                <constraint firstItem="3Mo-A0-Ced" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-8" id="IJs-JC-Rc8"/>
+                <constraint firstItem="F4M-F8-FvC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JaM-Sp-tJg"/>
+                <constraint firstItem="xII-Oj-Tkk" firstAttribute="top" secondItem="wX1-7Y-S6h" secondAttribute="top" constant="-2" id="N7N-dW-L0B"/>
+                <constraint firstItem="vAF-YM-4Wj" firstAttribute="leading" secondItem="30a-bM-X2Q" secondAttribute="trailing" constant="2" id="UFs-j3-esb"/>
+                <constraint firstItem="4Yz-xj-rtr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Uaa-Gv-xmB"/>
+                <constraint firstItem="4Yz-xj-rtr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="76:667" id="WJL-ZX-3Bb"/>
+                <constraint firstItem="3Mo-A0-Ced" firstAttribute="leading" secondItem="vAF-YM-4Wj" secondAttribute="trailing" constant="27" id="WuN-te-JjJ"/>
+                <constraint firstItem="pMX-u7-5DY" firstAttribute="top" secondItem="jeI-pU-zi3" secondAttribute="bottom" constant="25" id="ZYr-Mh-K21"/>
+                <constraint firstItem="jeI-pU-zi3" firstAttribute="leading" secondItem="0hr-Pp-NvU" secondAttribute="leading" id="bYm-w6-5ZL"/>
+                <constraint firstItem="S1Q-KN-IXd" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-18" id="cZD-ok-YZH"/>
+                <constraint firstItem="vAF-YM-4Wj" firstAttribute="top" secondItem="30a-bM-X2Q" secondAttribute="top" constant="-2" id="dW2-C9-mWT"/>
+                <constraint firstItem="xII-Oj-Tkk" firstAttribute="leading" secondItem="wX1-7Y-S6h" secondAttribute="trailing" constant="2" id="gAm-mw-7Df"/>
+                <constraint firstItem="S1Q-KN-IXd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="i22-UN-Iut"/>
+                <constraint firstAttribute="bottom" secondItem="F4M-F8-FvC" secondAttribute="bottom" id="iCk-h3-gWn"/>
+                <constraint firstItem="jeI-pU-zi3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="lR2-Wi-dP6" secondAttribute="leading" constant="-16" id="igx-5H-X07"/>
+                <constraint firstItem="wX1-7Y-S6h" firstAttribute="centerY" secondItem="30a-bM-X2Q" secondAttribute="centerY" id="mq3-NV-Vde"/>
+                <constraint firstItem="3Mo-A0-Ced" firstAttribute="centerY" secondItem="pMX-u7-5DY" secondAttribute="centerY" id="oy0-35-Pqr"/>
+                <constraint firstItem="0hr-Pp-NvU" firstAttribute="leading" secondItem="S1Q-KN-IXd" secondAttribute="leading" id="phy-cu-fid"/>
+                <constraint firstItem="wX1-7Y-S6h" firstAttribute="leading" secondItem="3Mo-A0-Ced" secondAttribute="leading" id="tZT-8r-0Fe"/>
+                <constraint firstItem="pMX-u7-5DY" firstAttribute="leading" secondItem="S1Q-KN-IXd" secondAttribute="leading" id="u77-wg-4AM"/>
+                <constraint firstItem="6U0-SS-QgW" firstAttribute="leading" secondItem="lR2-Wi-dP6" secondAttribute="trailing" constant="2" id="uMh-mt-wYd"/>
+                <constraint firstItem="jeI-pU-zi3" firstAttribute="top" secondItem="0hr-Pp-NvU" secondAttribute="bottom" constant="4" id="vuV-to-vRh"/>
+                <constraint firstItem="30a-bM-X2Q" firstAttribute="leading" secondItem="pMX-u7-5DY" secondAttribute="leading" id="wCS-pk-4xx"/>
+                <constraint firstItem="6U0-SS-QgW" firstAttribute="centerY" secondItem="lR2-Wi-dP6" secondAttribute="centerY" id="wMY-HV-ZYu"/>
+                <constraint firstItem="S1Q-KN-IXd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wRz-Ic-cOZ"/>
+                <constraint firstItem="4Yz-xj-rtr" firstAttribute="top" secondItem="wX1-7Y-S6h" secondAttribute="bottom" constant="13" id="yGK-BA-2GB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-374.5" y="29.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-blur" width="375" height="76"/>
+        <image name="ic-up" width="10" height="10"/>
+    </resources>
+</document>

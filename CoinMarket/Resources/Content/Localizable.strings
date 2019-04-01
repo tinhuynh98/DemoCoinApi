@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  CoinMarket
+
+  Created by Toof on 3/25/18.
+  Copyright © 2018 Toof_Appsia. All rights reserved.
+*/
+
+"dashboard"     = "Dashboard";
+"marketCap"     = "MARKET CAP";
+"24hVolume"     = "24H VOLUME";
+"btcDominance"  = "BTC DOMINANCE";
